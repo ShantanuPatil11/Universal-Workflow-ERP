@@ -7,114 +7,245 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/landing.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Universal Workflow ERP</div>
+<div class="page-bg"></div>
 
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#templates">Templates</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-        </ul>
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-cube"></div>
+        <span>Universal ERP</span>
+    </div>
 
-        <div class="auth-buttons">
-            <button class="secondary-btn">Login (Soon)</button>
-            <button class="primary-btn">Sign Up (Soon)</button>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#workflows">Workflows</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="nav-actions">
+        <button class="login-btn">Login</button>
+        <button class="primary-btn">Get Started</button>
+        <button class="menu-btn">⋯</button>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <div class="hero-badge">
+            UNIFIED • INTELLIGENT • FUTURE READY
         </div>
-    </nav>
 
-    <section class="hero">
-        <h1>One Platform.<br>Multiple Industries.</h1>
+        <h1>
+            One Platform.<br>
+            Infinite <span>Possibilities.</span>
+        </h1>
 
         <p>
-            Explore how Education, Corporate and Healthcare
-            organizations can operate through a unified ERP ecosystem.
+            Universal ERP empowers Education, Corporate and Healthcare
+            organizations through a unified workflow ecosystem.
+            Streamline operations, improve visibility and build
+            scalable processes from one intelligent platform.
         </p>
 
-        <a href="#templates" class="hero-btn">Explore Templates</a>
-    </section>
+        <div class="hero-buttons">
+            <button class="primary-btn">
+                Explore Workflows
+            </button>
 
-    <section id="templates" class="section">
-        <h2>Industry Templates</h2>
+            <button class="secondary-btn">
+                Watch Demo
+            </button>
+        </div>
 
-        <div class="card-grid">
+        <div class="stats-card">
 
-            <div class="card">
-                <h3>Education ERP</h3>
-                <p>Students, Teachers, Attendance, Timetable and Fees.</p>
-                <a href="education.html">Explore Demo</a>
+            <div class="stat">
+                <h3>10K+</h3>
+                <span>Organizations</span>
             </div>
 
-            <div class="card">
-                <h3>Corporate ERP</h3>
-                <p>Employees, Payroll, Projects and Departments.</p>
-                <a href="corporate.html">Explore Demo</a>
+            <div class="stat">
+                <h3>500K+</h3>
+                <span>Users</span>
             </div>
 
-            <div class="card">
-                <h3>Hospital ERP</h3>
-                <p>Patients, Doctors, Appointments and Billing.</p>
-                <a href="hospital.html">Explore Demo</a>
+            <div class="stat">
+                <h3>50+</h3>
+                <span>Modules</span>
+            </div>
+
+            <div class="stat">
+                <h3>99.9%</h3>
+                <span>Uptime</span>
             </div>
 
         </div>
-    </section>
 
-    <section id="features" class="section">
+    </div>
+
+    <div class="hero-right">
+
+        <div class="glow-cube"></div>
+
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+
+    </div>
+
+</section>
+
+<section id="workflows" class="section">
+
+    <div class="section-header">
+        <h2>Three Workflows. One Platform.</h2>
+        <p>
+            Designed for multiple industries from a single architecture.
+        </p>
+    </div>
+
+    <div class="workflow-grid">
+
+        <a href="education.html" class="workflow-card education">
+            <h3>Education ERP</h3>
+            <p>
+                Students, Teachers, Attendance,
+                Timetables and Academic Management.
+            </p>
+        </a>
+
+        <a href="corporate.html" class="workflow-card corporate">
+            <h3>Corporate ERP</h3>
+            <p>
+                Employees, Payroll, Projects,
+                Departments and Operations.
+            </p>
+        </a>
+
+        <a href="hospital.html" class="workflow-card hospital">
+            <h3>Healthcare ERP</h3>
+            <p>
+                Patients, Doctors, Appointments,
+                Billing and Hospital Management.
+            </p>
+        </a>
+
+    </div>
+
+</section>
+
+<section id="features" class="section">
+
+    <div class="section-header">
         <h2>Core Features</h2>
+    </div>
 
-        <div class="card-grid">
+    <div class="features-grid">
 
-            <div class="card">Role Hierarchy</div>
-            <div class="card">Analytics Dashboard</div>
-            <div class="card">Excel Upload</div>
-            <div class="card">AI Assistant (Phase 3)</div>
-            <div class="card">Reports</div>
-            <div class="card">Multi-Domain ERP</div>
-
+        <div class="feature-card">
+            <h4>Role Management</h4>
         </div>
-    </section>
 
-    <section id="roadmap" class="section">
+        <div class="feature-card">
+            <h4>Analytics & Reports</h4>
+        </div>
+
+        <div class="feature-card">
+            <h4>Workflow Automation</h4>
+        </div>
+
+        <div class="feature-card">
+            <h4>Data Security</h4>
+        </div>
+
+        <div class="feature-card">
+            <h4>AI Assistant (Phase 3)</h4>
+        </div>
+
+        <div class="feature-card">
+            <h4>Multi Industry Support</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="roadmap" class="section">
+
+    <div class="section-header">
         <h2>Roadmap</h2>
+    </div>
 
-        <div class="timeline">
+    <div class="roadmap">
 
-            <div class="timeline-item active">
-                Phase 1 – Interactive Simulations
-            </div>
-
-            <div class="timeline-item">
-                Phase 2 – Authentication
-            </div>
-
-            <div class="timeline-item">
-                Phase 3 – AI Assistant
-            </div>
-
-            <div class="timeline-item">
-                Phase 4 – Excel Integration
-            </div>
-
-            <div class="timeline-item">
-                Phase 5 – Production ERP
-            </div>
-
+        <div class="roadmap-item active">
+            <h4>Phase 1</h4>
+            <span>Simulation Platform</span>
         </div>
-    </section>
 
-    <footer>
-        <h3>Universal Workflow ERP</h3>
+        <div class="roadmap-item">
+            <h4>Phase 2</h4>
+            <span>Authentication</span>
+        </div>
+
+        <div class="roadmap-item">
+            <h4>Phase 3</h4>
+            <span>AI Assistant</span>
+        </div>
+
+        <div class="roadmap-item">
+            <h4>Phase 4</h4>
+            <span>Excel Integration</span>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-column">
+        <h3>Universal ERP</h3>
         <p>
-            A unified ERP ecosystem for Education,
-            Corporate and Healthcare organizations.
+            One platform for Education,
+            Corporate and Healthcare operations.
         </p>
-    </footer>
+    </div>
 
-    <script src="js/main.js"></script>
+    <div class="footer-column">
+        <h4>Navigation</h4>
+        <a href="#">Home</a>
+        <a href="#">Workflows</a>
+        <a href="#">Features</a>
+        <a href="#">Roadmap</a>
+    </div>
+
+    <div class="footer-column">
+        <h4>Workflows</h4>
+        <a href="#">Education</a>
+        <a href="#">Corporate</a>
+        <a href="#">Healthcare</a>
+    </div>
+
+    <div class="footer-column">
+        <h4>Coming Soon</h4>
+        <a href="#">Authentication</a>
+        <a href="#">AI Assistant</a>
+        <a href="#">Excel Upload</a>
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>

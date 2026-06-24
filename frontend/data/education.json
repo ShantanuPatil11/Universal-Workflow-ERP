@@ -1,0 +1,164 @@
+{
+  "school": {
+    "name": "Universal Public School",
+    "principal": "Dr. Rajesh Sharma",
+    "students_count": 1200,
+    "teachers_count": 75,
+    "classes_count": 42,
+    "attendance_rate": 94,
+    "departments_count": 12
+  },
+
+  "attendance_trend": [65, 80, 72, 90, 85, 94, 88],
+
+  "teacher_summary": {
+    "active_teachers": 72,
+    "on_leave": 3,
+    "average_rating": 4.8,
+    "departments": 12
+  },
+
+  "students": [
+    {
+      "id": "ST001",
+      "name": "Rahul Sharma",
+      "class": "10-A",
+      "attendance": 96,
+      "fees_status": "Paid"
+    },
+    {
+      "id": "ST002",
+      "name": "Ananya Patil",
+      "class": "9-B",
+      "attendance": 92,
+      "fees_status": "Paid"
+    },
+    {
+      "id": "ST003",
+      "name": "Rohan Singh",
+      "class": "8-C",
+      "attendance": 98,
+      "fees_status": "Pending"
+    },
+    {
+      "id": "ST004",
+      "name": "Sneha Kulkarni",
+      "class": "11-A",
+      "attendance": 95,
+      "fees_status": "Paid"
+    },
+    {
+      "id": "ST005",
+      "name": "Aarav Joshi",
+      "class": "7-B",
+      "attendance": 91,
+      "fees_status": "Pending"
+    },
+    {
+      "id": "ST006",
+      "name": "Meera Deshpande",
+      "class": "12-A",
+      "attendance": 97,
+      "fees_status": "Paid"
+    }
+  ],
+
+  "teachers": [
+    {
+      "id": "TC001",
+      "name": "Priya Deshmukh",
+      "department": "Mathematics",
+      "status": "Active",
+      "rating": 4.9
+    },
+    {
+      "id": "TC002",
+      "name": "Amit Joshi",
+      "department": "Physics",
+      "status": "Active",
+      "rating": 4.7
+    },
+    {
+      "id": "TC003",
+      "name": "Neha Patil",
+      "department": "Chemistry",
+      "status": "Leave",
+      "rating": 4.8
+    },
+    {
+      "id": "TC004",
+      "name": "Sandeep Kulkarni",
+      "department": "English",
+      "status": "Active",
+      "rating": 4.9
+    },
+    {
+      "id": "TC005",
+      "name": "Pooja Shah",
+      "department": "Biology",
+      "status": "Active",
+      "rating": 4.6
+    }
+  ],
+
+  "departments": [
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "English",
+    "History",
+    "Geography",
+    "Computer Science",
+    "Economics",
+    "Commerce",
+    "Arts",
+    "Physical Education"
+  ],
+
+  "timetable": [
+    {
+      "day": "Monday",
+      "class": "10-A",
+      "subject": "Mathematics",
+      "teacher": "Priya Deshmukh",
+      "time": "09:00 AM"
+    },
+    {
+      "day": "Monday",
+      "class": "10-A",
+      "subject": "Physics",
+      "teacher": "Amit Joshi",
+      "time": "10:00 AM"
+    },
+    {
+      "day": "Tuesday",
+      "class": "9-B",
+      "subject": "English",
+      "teacher": "Sandeep Kulkarni",
+      "time": "11:00 AM"
+    }
+  ],
+
+  "fees": {
+    "total_collected": 18500000,
+    "pending_amount": 2300000,
+    "paid_students": 1080,
+    "pending_students": 120
+  },
+
+  "notifications": [
+    {
+      "title": "Parent Teacher Meeting",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Science Exhibition",
+      "date": "2026-07-15"
+    },
+    {
+      "title": "Quarterly Exams",
+      "date": "2026-08-01"
+    }
+  ]
+}
