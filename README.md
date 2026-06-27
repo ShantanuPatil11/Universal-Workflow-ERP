@@ -6,11 +6,15 @@
 
 ![Landing Page](screenshots/landing-page-v1.png)
 
+> A modular ERP platform capable of adapting to multiple industries through configurable workflow templates, unified scheduling, interactive dashboards, and a reusable workflow engine.
+
 ---
 
 ### Education ERP Dashboard
 
 ![Education Dashboard](screenshots/education-dashboard-v1.png)
+
+> This template showcases how the Universal Workflow ERP architecture can be extended to education workflows.
 
 ---
 
@@ -19,7 +23,6 @@
 ![Hospital Dashboard](screenshots/hospital-dashboard.png)
 
 > A hospital management dashboard designed for patient records, doctor management, appointments, pharmacy operations, and billing.  
-> This template showcases how the Universal Workflow ERP architecture can be extended to healthcare workflows without changing the underlying platform design.
 
 ---
 
@@ -29,10 +32,6 @@
 
 > A modern corporate workflow dashboard focused on employee management, departments, attendance, projects, and payroll.  
 > Built using the same modular architecture as the Education template, demonstrating how the platform adapts to different industries while maintaining a consistent user experience.
-
----
-
-> A modular ERP platform capable of adapting to multiple industries through configurable workflow templates, unified scheduling, interactive dashboards, and a reusable workflow engine.
 
 ---
 
