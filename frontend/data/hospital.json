@@ -1,0 +1,52 @@
+{
+	"hospital": {
+		"name": "Universal Multispeciality Hospital",
+		"patients_count": 186,
+		"doctors_count": 42,
+		"appointments_count": 132,
+		"occupancy_rate": 88
+	},
+	"patient_inflow": [24, 29, 31, 27, 35, 30, 28],
+	"billing": {
+		"total_billed": 12480000,
+		"pending_amount": 1740000,
+		"settled_patients": 154,
+		"pending_patients": 32
+	},
+	"patients": [
+		{"id": "PT001", "name": "Aarav Kapoor", "department": "Cardiology", "status": "Admitted", "bill_status": "Settled", "bill_amount": 98000},
+		{"id": "PT002", "name": "Meera Iyer", "department": "Neurology", "status": "Observation", "bill_status": "Pending", "bill_amount": 124000},
+		{"id": "PT003", "name": "Sahil Mehta", "department": "Orthopedics", "status": "Admitted", "bill_status": "Settled", "bill_amount": 76000},
+		{"id": "PT004", "name": "Anvi Sharma", "department": "Pediatrics", "status": "Discharged", "bill_status": "Settled", "bill_amount": 42000},
+		{"id": "PT005", "name": "Rahul Nanda", "department": "Oncology", "status": "Admitted", "bill_status": "Pending", "bill_amount": 186000},
+		{"id": "PT006", "name": "Devika Rao", "department": "ENT", "status": "Observation", "bill_status": "Settled", "bill_amount": 51000},
+		{"id": "PT007", "name": "Kunal Batra", "department": "Dermatology", "status": "Discharged", "bill_status": "Settled", "bill_amount": 28000},
+		{"id": "PT008", "name": "Ishita Verma", "department": "Gynecology", "status": "Admitted", "bill_status": "Pending", "bill_amount": 89000}
+	],
+	"doctors": [
+		{"id": "DR001", "name": "Dr. Priya Menon", "specialization": "Cardiology", "status": "On Duty", "rating": 4.9},
+		{"id": "DR002", "name": "Dr. Karan Sinha", "specialization": "Neurology", "status": "On Duty", "rating": 4.8},
+		{"id": "DR003", "name": "Dr. Nidhi Arora", "specialization": "Orthopedics", "status": "Off Duty", "rating": 4.7},
+		{"id": "DR004", "name": "Dr. Vivek Shah", "specialization": "Pediatrics", "status": "On Duty", "rating": 4.9},
+		{"id": "DR005", "name": "Dr. Ritu Saini", "specialization": "Oncology", "status": "On Duty", "rating": 4.8},
+		{"id": "DR006", "name": "Dr. Aman Khurana", "specialization": "ENT", "status": "On Leave", "rating": 4.6},
+		{"id": "DR007", "name": "Dr. Sneha Ghosh", "specialization": "Dermatology", "status": "On Duty", "rating": 4.7},
+		{"id": "DR008", "name": "Dr. Tanmay Joshi", "specialization": "Gynecology", "status": "On Duty", "rating": 4.8}
+	],
+	"appointments": [
+		{"id": "AP001", "patient": "Aarav Kapoor", "doctor": "Dr. Priya Menon", "department": "Cardiology", "time": "09:30 AM", "status": "Confirmed"},
+		{"id": "AP002", "patient": "Meera Iyer", "doctor": "Dr. Karan Sinha", "department": "Neurology", "time": "10:00 AM", "status": "Confirmed"},
+		{"id": "AP003", "patient": "Sahil Mehta", "doctor": "Dr. Nidhi Arora", "department": "Orthopedics", "time": "10:30 AM", "status": "Rescheduled"},
+		{"id": "AP004", "patient": "Anvi Sharma", "doctor": "Dr. Vivek Shah", "department": "Pediatrics", "time": "11:00 AM", "status": "Completed"},
+		{"id": "AP005", "patient": "Rahul Nanda", "doctor": "Dr. Ritu Saini", "department": "Oncology", "time": "11:45 AM", "status": "Confirmed"},
+		{"id": "AP006", "patient": "Devika Rao", "doctor": "Dr. Aman Khurana", "department": "ENT", "time": "12:15 PM", "status": "Cancelled"}
+	],
+	"pharmacy": [
+		{"id": "MED001", "medicine": "Atorvastatin 20mg", "category": "Cardiac", "stock": 214, "status": "In Stock"},
+		{"id": "MED002", "medicine": "Metformin 500mg", "category": "Diabetes", "stock": 164, "status": "In Stock"},
+		{"id": "MED003", "medicine": "Cefixime 200mg", "category": "Antibiotic", "stock": 68, "status": "Low Stock"},
+		{"id": "MED004", "medicine": "Paracetamol 650mg", "category": "General", "stock": 312, "status": "In Stock"},
+		{"id": "MED005", "medicine": "Insulin Glargine", "category": "Diabetes", "stock": 22, "status": "Low Stock"},
+		{"id": "MED006", "medicine": "Pantoprazole 40mg", "category": "Gastro", "stock": 106, "status": "In Stock"}
+	]
+}

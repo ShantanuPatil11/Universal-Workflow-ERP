@@ -1,6 +1,38 @@
 # Universal Workflow ERP
 
-> A configurable workflow, scheduling and resource management platform supporting multiple ERP templates through a unified engine.
+## Preview
+
+### Landing Page
+
+![Landing Page](screenshots/landing-page-v1.png)
+
+---
+
+### Education ERP Dashboard
+
+![Education Dashboard](screenshots/education-dashboard-v1.png)
+
+---
+
+### Hospital ERP Dashboard
+
+![Hospital Dashboard](screenshots/hospital-dashboard.png)
+
+> A hospital management dashboard designed for patient records, doctor management, appointments, pharmacy operations, and billing.  
+> This template showcases how the Universal Workflow ERP architecture can be extended to healthcare workflows without changing the underlying platform design.
+
+---
+
+### Corporate ERP Dashboard
+
+![Corporate Dashboard](screenshots/corporate-dashboard.png)
+
+> A modern corporate workflow dashboard focused on employee management, departments, attendance, projects, and payroll.  
+> Built using the same modular architecture as the Education template, demonstrating how the platform adapts to different industries while maintaining a consistent user experience.
+
+---
+
+> A modular ERP platform capable of adapting to multiple industries through configurable workflow templates, unified scheduling, interactive dashboards, and a reusable workflow engine.
 
 ---
 
@@ -11,6 +43,25 @@ Most ERP systems are designed for a specific industry and require significant cu
 Universal Workflow ERP aims to provide a common workflow engine that can adapt to multiple industries through predefined templates while maintaining a unified scheduling and resource management core.
 
 Instead of building separate systems for education institutes, corporate offices, hospitals, manufacturing units, or logistics operations, this project focuses on creating a reusable workflow framework capable of handling scheduling, resource allocation, reporting, and operational planning.
+
+---
+
+## Current Prototype
+
+The current prototype demonstrates the foundation of the Universal Workflow ERP platform.
+
+Implemented modules include:
+
+- Premium Landing Page
+- Education ERP Dashboard
+- Interactive Chart.js Analytics
+- JSON-driven sample datasets
+- Responsive dashboard layout
+
+Upcoming prototype modules:
+
+- Corporate ERP
+- Hospital ERP
 
 ---
 
@@ -61,7 +112,9 @@ Excel remains a first-class citizen for data management, reporting, imports, and
 
 The system prioritizes deterministic workflows and business logic over heavy AI usage.
 
-AI will only be used where it provides clear value, such as sample data generation and optional recommendations.
+AI is intentionally positioned as an assistant rather than a decision maker.
+
+The platform prioritizes deterministic workflows and structured business logic. AI will initially support natural-language data retrieval while all business operations remain governed by workflow rules and user permissions.
 
 ---
 
@@ -140,30 +193,26 @@ Evaluate operational changes before implementation.
 
 ---
 
-## Architecture (Planned)
+## Technology Stack
 
-```
-Universal-Workflow-ERP/
+### Frontend
 
-├── templates/
-├── core/
-│   ├── scheduler/
-│   ├── validator/
-│   ├── allocator/
-│   └── simulator/
-│
-├── data/
-│   ├── excel/
-│   └── database/
-│
-├── dashboard/
-│
-├── docs/
-│
-├── app/
-│
-└── tests/
-```
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+### Visualization
+
+- Chart.js
+
+### Data
+
+- JSON
+- Excel (Planned)
+
+### Backend (Future)
+
+- FastAPI
 
 ---
 
@@ -171,22 +220,26 @@ Universal-Workflow-ERP/
 
 ### Completed
 
-- [x] Product Vision Finalized
-- [x] Repository Created
-- [x] Initial Roadmap Defined
+- [x] Product Vision
+- [x] Repository Setup
+- [x] Landing Page Prototype
+- [x] Education ERP Dashboard
+- [x] JSON Data Model
+- [x] Chart.js Integration
+- [x] Responsive Frontend
 
 ### In Progress
 
-- [ ] Template Architecture Design
-- [ ] Workflow Entity Modeling
+- [ ] Dashboard Refinement
+- [ ] Corporate ERP Prototype
 
 ### Upcoming
 
-- [ ] Excel Data Layer
-- [ ] Scheduling Engine
-- [ ] Constraint Validator
-- [ ] Reporting Dashboard
-- [ ] Workflow Simulator
+- [ ] Hospital ERP
+- [ ] Authentication
+- [ ] Excel Integration
+- [ ] Workflow Engine
+- [ ] AI Assistant
 
 ---
 
@@ -228,6 +281,24 @@ Universal Workflow ERP Platform
 
 ## Status
 
-🚧 Early Development
+🚧 Active Prototype Development
 
-This project is currently focused on architecture design, template modeling, and workflow engine planning.
+This project is currently focused on template modeling, UI/UX and workflow engine planning.
+
+---
+
+## Project Gallery
+
+Current Version
+
+- Landing Page
+- Education Dashboard
+
+Future Releases
+
+- Corporate ERP
+- Hospital ERP
+- Authentication
+- AI Assistant
+  
+---

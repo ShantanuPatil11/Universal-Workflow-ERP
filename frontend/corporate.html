@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporate ERP</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/corporate.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="dashboard-shell">
+<aside class="sidebar">
+<div class="sidebar-top">
+<div class="brand-lockup">
+<div class="brand-mark">U</div>
+<div>
+<div class="sidebar-logo">Universal ERP</div>
+<div class="sidebar-subtitle">Corporate template</div>
+</div>
+</div>
+
+<div class="workspace-card">
+<span class="workspace-label">Workspace</span>
+<strong>Corporate Operations</strong>
+<p>Unified people operations, project execution, and payroll control.</p>
+</div>
+
+<nav class="sidebar-nav" aria-label="Corporate navigation">
+<a class="active" href="#" data-view="dashboard">
+<span class="nav-icon">DB</span>
+<span>Dashboard</span>
+</a>
+<a href="#" data-view="employees">
+<span class="nav-icon">EM</span>
+<span>Employees</span>
+</a>
+<a href="#" data-view="departments">
+<span class="nav-icon">DP</span>
+<span>Departments</span>
+</a>
+<a href="#" data-view="attendance">
+<span class="nav-icon">AT</span>
+<span>Attendance</span>
+</a>
+<a href="#" data-view="projects">
+<span class="nav-icon">PJ</span>
+<span>Projects</span>
+</a>
+<a href="#" data-view="payroll">
+<span class="nav-icon">PR</span>
+<span>Payroll</span>
+</a>
+</nav>
+</div>
+
+<div class="coming-soon">AI Copilot<span>Phase 3</span></div>
+</aside>
+
+<main class="main-content">
+
+<header class="topbar">
+<div class="topbar-copy">
+<div class="eyebrow-row">
+<span class="eyebrow">Corporate ERP</span>
+<span class="status-pill">Live dashboard</span>
+</div>
+<h1 id="viewTitle">Corporate ERP Dashboard</h1>
+<p id="companyName">Universal Manufacturing Group</p>
+</div>
+<div class="topbar-meta">
+<div class="meta-chip">Current quarter: Q3</div>
+<div class="meta-chip">Updated 1m ago</div>
+<div class="profile">COO</div>
+</div>
+</header>
+
+<section id="view-dashboard" class="app-view is-active" data-view="dashboard">
+<section class="dashboard-banner">
+<div>
+<span class="banner-label">Operational overview</span>
+<h2>Enterprise execution at a glance</h2>
+<p>Track workforce strength, attendance consistency, project throughput, and payroll health from a single operations cockpit.</p>
+</div>
+<div class="banner-metrics">
+<div>
+<span>Company</span>
+<strong>Active</strong>
+</div>
+<div>
+<span>Template</span>
+<strong>Corporate</strong>
+</div>
+<div>
+<span>Mode</span>
+<strong>Read only</strong>
+</div>
+</div>
+</section>
+
+<section class="kpi-grid">
+<div class="kpi-card"><span class="kpi-label">Employees</span><h2 id="employeesCount">0</h2><span class="kpi-footnote">Active workforce</span></div>
+<div class="kpi-card"><span class="kpi-label">Departments</span><h2 id="departmentsCount">0</h2><span class="kpi-footnote">Business units</span></div>
+<div class="kpi-card"><span class="kpi-label">Attendance</span><h2 id="attendanceCount">0%</h2><span class="kpi-footnote">Weekly average</span></div>
+<div class="kpi-card"><span class="kpi-label">Projects</span><h2 id="projectsCount">0</h2><span class="kpi-footnote">Active engagements</span></div>
+</section>
+
+<section class="analytics-grid">
+<div class="panel chart-panel">
+<div class="panel-header">Attendance Trend</div>
+<div class="chart-canvas-wrap">
+<canvas id="attendanceChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
+<div class="panel-header">Payroll Processing</div>
+<div class="chart-canvas-wrap">
+<canvas id="payrollChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
+<div class="panel-header">Employees by Department</div>
+<div class="chart-canvas-wrap">
+<canvas id="employeesChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
+<div class="panel-header">Projects by Status</div>
+<div class="chart-canvas-wrap">
+<canvas id="projectsChart"></canvas>
+</div>
+</div>
+</section>
+
+<section class="panel table-panel">
+<div class="panel-header">Employee Overview</div>
+<table>
+<thead><tr><th>ID</th><th>Name</th><th>Department</th><th>Attendance</th><th>Payroll</th></tr></thead>
+<tbody id="employeesTable"></tbody>
+</table>
+</section>
+
+<section class="panel table-panel">
+<div class="panel-header">Department Overview</div>
+<table>
+<thead><tr><th>ID</th><th>Department</th><th>Head</th><th>Status</th><th>Headcount</th></tr></thead>
+<tbody id="departmentsTable"></tbody>
+</table>
+</section>
+</section>
+
+<section id="view-employees" class="app-view" data-view="employees" hidden>
+<div id="employeesView"></div>
+</section>
+
+<section id="view-departments" class="app-view" data-view="departments" hidden>
+<div id="departmentsView"></div>
+</section>
+
+<section id="view-attendance" class="app-view" data-view="attendance" hidden>
+<div id="attendanceView"></div>
+</section>
+
+<section id="view-projects" class="app-view" data-view="projects" hidden>
+<div id="projectsView"></div>
+</section>
+
+<section id="view-payroll" class="app-view" data-view="payroll" hidden>
+<div id="payrollView"></div>
+</section>
+
+</main>
+</div>
+
+<script src="js/corporate.js"></script>
+</body>
+</html>

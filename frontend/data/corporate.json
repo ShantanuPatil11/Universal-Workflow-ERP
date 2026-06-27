@@ -1,0 +1,47 @@
+{
+	"company": {
+		"name": "Universal Manufacturing Group",
+		"ceo": "A. Mehta",
+		"employees_count": 248,
+		"departments_count": 8,
+		"attendance_rate": 93,
+		"projects_count": 34
+	},
+	"attendance_trend": [91, 93, 92, 95, 94, 93, 92],
+	"payroll": {
+		"total_disbursed": 18640000,
+		"pending_amount": 920000,
+		"processed_employees": 232,
+		"pending_employees": 16
+	},
+	"employees": [
+		{"id": "EMP001", "name": "Rohan Kulkarni", "department": "Engineering", "designation": "Senior Engineer", "attendance": 96, "payroll_status": "Processed", "monthly_salary": 145000},
+		{"id": "EMP002", "name": "Isha Nair", "department": "Finance", "designation": "Finance Manager", "attendance": 94, "payroll_status": "Processed", "monthly_salary": 162000},
+		{"id": "EMP003", "name": "Vivek Rao", "department": "Operations", "designation": "Operations Lead", "attendance": 91, "payroll_status": "Pending", "monthly_salary": 132000},
+		{"id": "EMP004", "name": "Neha Arora", "department": "People", "designation": "HR Business Partner", "attendance": 95, "payroll_status": "Processed", "monthly_salary": 118000},
+		{"id": "EMP005", "name": "Karan Sethi", "department": "Sales", "designation": "Regional Sales Manager", "attendance": 92, "payroll_status": "Processed", "monthly_salary": 154000},
+		{"id": "EMP006", "name": "Anjali Verma", "department": "Marketing", "designation": "Brand Strategist", "attendance": 90, "payroll_status": "Pending", "monthly_salary": 111000},
+		{"id": "EMP007", "name": "Priyansh Gupta", "department": "Engineering", "designation": "Product Engineer", "attendance": 97, "payroll_status": "Processed", "monthly_salary": 138000},
+		{"id": "EMP008", "name": "Nikita Bansal", "department": "Legal", "designation": "Legal Counsel", "attendance": 93, "payroll_status": "Processed", "monthly_salary": 149000},
+		{"id": "EMP009", "name": "Samar Jindal", "department": "Operations", "designation": "Plant Supervisor", "attendance": 89, "payroll_status": "Pending", "monthly_salary": 104000},
+		{"id": "EMP010", "name": "Aditi Sharma", "department": "Finance", "designation": "Senior Analyst", "attendance": 95, "payroll_status": "Processed", "monthly_salary": 126000}
+	],
+	"departments": [
+		{"id": "DEP01", "name": "Engineering", "head": "Riya Sinha", "status": "Stable", "headcount": 64, "budget_utilization": 78},
+		{"id": "DEP02", "name": "Operations", "head": "Harsh Patel", "status": "Scaled", "headcount": 58, "budget_utilization": 84},
+		{"id": "DEP03", "name": "Finance", "head": "Isha Nair", "status": "Stable", "headcount": 24, "budget_utilization": 73},
+		{"id": "DEP04", "name": "People", "head": "Neha Arora", "status": "Stable", "headcount": 16, "budget_utilization": 66},
+		{"id": "DEP05", "name": "Sales", "head": "Karan Sethi", "status": "Scaled", "headcount": 38, "budget_utilization": 88},
+		{"id": "DEP06", "name": "Marketing", "head": "Anjali Verma", "status": "Watch", "headcount": 22, "budget_utilization": 71},
+		{"id": "DEP07", "name": "Legal", "head": "Nikita Bansal", "status": "Stable", "headcount": 9, "budget_utilization": 64},
+		{"id": "DEP08", "name": "Procurement", "head": "Rajat Mahajan", "status": "Stable", "headcount": 17, "budget_utilization": 69}
+	],
+	"projects": [
+		{"id": "PRJ101", "name": "Plant Digitization", "department": "Operations", "owner": "Harsh Patel", "status": "On Track", "progress": 72, "deadline": "2026-09-18"},
+		{"id": "PRJ102", "name": "ERP Finance Rollout", "department": "Finance", "owner": "Isha Nair", "status": "On Track", "progress": 66, "deadline": "2026-10-05"},
+		{"id": "PRJ103", "name": "Recruitment Automation", "department": "People", "owner": "Neha Arora", "status": "At Risk", "progress": 49, "deadline": "2026-08-30"},
+		{"id": "PRJ104", "name": "Distributor Expansion", "department": "Sales", "owner": "Karan Sethi", "status": "On Track", "progress": 58, "deadline": "2026-11-12"},
+		{"id": "PRJ105", "name": "Brand Refresh", "department": "Marketing", "owner": "Anjali Verma", "status": "Delayed", "progress": 41, "deadline": "2026-08-22"},
+		{"id": "PRJ106", "name": "Supplier Consolidation", "department": "Procurement", "owner": "Rajat Mahajan", "status": "On Track", "progress": 61, "deadline": "2026-09-28"}
+	]
+}

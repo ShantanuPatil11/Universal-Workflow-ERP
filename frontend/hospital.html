@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital ERP</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/hospital.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="dashboard-shell">
+<aside class="sidebar">
+<div class="sidebar-top">
+<div class="brand-lockup">
+<div class="brand-mark">U</div>
+<div>
+<div class="sidebar-logo">Universal ERP</div>
+<div class="sidebar-subtitle">Hospital template</div>
+</div>
+</div>
+
+<div class="workspace-card">
+<span class="workspace-label">Workspace</span>
+<strong>Hospital Operations</strong>
+<p>Unified clinical workflows, appointments, pharmacy, and billing control.</p>
+</div>
+
+<nav class="sidebar-nav" aria-label="Hospital navigation">
+<a class="active" href="#" data-view="dashboard">
+<span class="nav-icon">DB</span>
+<span>Dashboard</span>
+</a>
+<a href="#" data-view="patients">
+<span class="nav-icon">PT</span>
+<span>Patients</span>
+</a>
+<a href="#" data-view="doctors">
+<span class="nav-icon">DR</span>
+<span>Doctors</span>
+</a>
+<a href="#" data-view="appointments">
+<span class="nav-icon">AP</span>
+<span>Appointments</span>
+</a>
+<a href="#" data-view="pharmacy">
+<span class="nav-icon">PH</span>
+<span>Pharmacy</span>
+</a>
+<a href="#" data-view="billing">
+<span class="nav-icon">BL</span>
+<span>Billing</span>
+</a>
+</nav>
+</div>
+
+<div class="coming-soon">AI Triage<span>Phase 3</span></div>
+</aside>
+
+<main class="main-content">
+
+<header class="topbar">
+<div class="topbar-copy">
+<div class="eyebrow-row">
+<span class="eyebrow">Hospital ERP</span>
+<span class="status-pill">Live dashboard</span>
+</div>
+<h1 id="viewTitle">Hospital ERP Dashboard</h1>
+<p id="hospitalName">Universal Multispeciality Hospital</p>
+</div>
+<div class="topbar-meta">
+<div class="meta-chip">Shift: Day</div>
+<div class="meta-chip">Updated 1m ago</div>
+<div class="profile">CMO</div>
+</div>
+</header>
+
+<section id="view-dashboard" class="app-view is-active" data-view="dashboard">
+<section class="dashboard-banner">
+<div>
+<span class="banner-label">Operational overview</span>
+<h2>Clinical operations at a glance</h2>
+<p>Monitor patient flow, doctor availability, appointment load, medication inventory, and billing completion from one care command center.</p>
+</div>
+<div class="banner-metrics">
+<div>
+<span>Hospital</span>
+<strong>Active</strong>
+</div>
+<div>
+<span>Template</span>
+<strong>Hospital</strong>
+</div>
+<div>
+<span>Mode</span>
+<strong>Read only</strong>
+</div>
+</div>
+</section>
+
+<section class="kpi-grid">
+<div class="kpi-card"><span class="kpi-label">Patients</span><h2 id="patientsCount">0</h2><span class="kpi-footnote">Active records</span></div>
+<div class="kpi-card"><span class="kpi-label">Doctors</span><h2 id="doctorsCount">0</h2><span class="kpi-footnote">On roster</span></div>
+<div class="kpi-card"><span class="kpi-label">Appointments</span><h2 id="appointmentsCount">0</h2><span class="kpi-footnote">Today scheduled</span></div>
+<div class="kpi-card"><span class="kpi-label">Occupancy</span><h2 id="occupancyCount">0%</h2><span class="kpi-footnote">Bed utilization</span></div>
+</section>
+
+<section class="analytics-grid">
+<div class="panel chart-panel">
+<div class="panel-header">Patient Inflow</div>
+<div class="chart-canvas-wrap">
+<canvas id="patientsChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
+<div class="panel-header">Billing Status</div>
+<div class="chart-canvas-wrap">
+<canvas id="billingChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
+<div class="panel-header">Doctor Specializations</div>
+<div class="chart-canvas-wrap">
+<canvas id="doctorsChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
+<div class="panel-header">Appointments by Status</div>
+<div class="chart-canvas-wrap">
+<canvas id="appointmentsChart"></canvas>
+</div>
+</div>
+</section>
+
+<section class="panel table-panel">
+<div class="panel-header">Recent Patients</div>
+<table>
+<thead><tr><th>ID</th><th>Name</th><th>Department</th><th>Status</th><th>Bill</th></tr></thead>
+<tbody id="patientsTable"></tbody>
+</table>
+</section>
+
+<section class="panel table-panel">
+<div class="panel-header">Doctor Overview</div>
+<table>
+<thead><tr><th>ID</th><th>Name</th><th>Specialization</th><th>Status</th><th>Rating</th></tr></thead>
+<tbody id="doctorsTable"></tbody>
+</table>
+</section>
+</section>
+
+<section id="view-patients" class="app-view" data-view="patients" hidden>
+<div id="patientsView"></div>
+</section>
+
+<section id="view-doctors" class="app-view" data-view="doctors" hidden>
+<div id="doctorsView"></div>
+</section>
+
+<section id="view-appointments" class="app-view" data-view="appointments" hidden>
+<div id="appointmentsView"></div>
+</section>
+
+<section id="view-pharmacy" class="app-view" data-view="pharmacy" hidden>
+<div id="pharmacyView"></div>
+</section>
+
+<section id="view-billing" class="app-view" data-view="billing" hidden>
+<div id="billingView"></div>
+</section>
+
+</main>
+</div>
+
+<script src="js/hospital.js"></script>
+</body>
+</html>

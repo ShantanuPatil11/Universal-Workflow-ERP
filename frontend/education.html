@@ -7,68 +7,140 @@
 <link rel="stylesheet" href="css/global.css">
 <link rel="stylesheet" href="css/education.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-<div class="dashboard-layout">
+<div class="dashboard-shell">
 <aside class="sidebar">
+<div class="sidebar-top">
+<div class="brand-lockup">
+<div class="brand-mark">U</div>
 <div>
 <div class="sidebar-logo">Universal ERP</div>
-<nav>
-<a class="active" href="#">Dashboard</a>
-<a href="#">Students</a>
-<a href="#">Teachers</a>
-<a href="#">Attendance</a>
-<a href="#">Timetable</a>
-<a href="#">Fees</a>
+<div class="sidebar-subtitle">Education template</div>
+</div>
+</div>
+
+<div class="workspace-card">
+<span class="workspace-label">Workspace</span>
+<strong>School Operations</strong>
+<p>Unified scheduling, attendance, and academic reporting.</p>
+</div>
+
+<nav class="sidebar-nav" aria-label="Education navigation">
+<a class="active" href="#" data-view="dashboard">
+<span class="nav-icon">DB</span>
+<span>Dashboard</span>
+</a>
+<a href="#" data-view="students">
+<span class="nav-icon">ST</span>
+<span>Students</span>
+</a>
+<a href="#" data-view="teachers">
+<span class="nav-icon">TC</span>
+<span>Teachers</span>
+</a>
+<a href="#" data-view="attendance">
+<span class="nav-icon">AT</span>
+<span>Attendance</span>
+</a>
+<a href="#" data-view="timetable">
+<span class="nav-icon">TT</span>
+<span>Timetable</span>
+</a>
+<a href="#" data-view="fees">
+<span class="nav-icon">FS</span>
+<span>Fees</span>
+</a>
 </nav>
 </div>
+
 <div class="coming-soon">AI Assistant<span>Phase 3</span></div>
 </aside>
 
 <main class="main-content">
 
 <header class="topbar">
-<div>
-<h1>Education ERP Dashboard</h1>
+<div class="topbar-copy">
+<div class="eyebrow-row">
+<span class="eyebrow">Education ERP</span>
+<span class="status-pill">Live dashboard</span>
+</div>
+<h1 id="viewTitle">Education ERP Dashboard</h1>
 <p id="schoolName">Universal Public School</p>
 </div>
+<div class="topbar-meta">
+<div class="meta-chip">Current term: Q2</div>
+<div class="meta-chip">Updated 2m ago</div>
 <div class="profile">Principal</div>
+</div>
 </header>
 
+<section id="view-dashboard" class="app-view is-active" data-view="dashboard">
+<section class="dashboard-banner">
+<div>
+<span class="banner-label">Operational overview</span>
+<h2>Academic operations at a glance</h2>
+<p>Monitor student strength, faculty coverage, attendance health, and fee collection in one coordinated workspace.</p>
+</div>
+<div class="banner-metrics">
+<div>
+<span>School</span>
+<strong>Active</strong>
+</div>
+<div>
+<span>Template</span>
+<strong>Education</strong>
+</div>
+<div>
+<span>Mode</span>
+<strong>Read only</strong>
+</div>
+</div>
+</section>
+
 <section class="kpi-grid">
-<div class="kpi-card"><h2 id="studentsCount">1200</h2><span>Students</span></div>
-<div class="kpi-card"><h2 id="teachersCount">75</h2><span>Teachers</span></div>
-<div class="kpi-card"><h2 id="attendanceCount">94%</h2><span>Attendance</span></div>
-<div class="kpi-card"><h2 id="classesCount">42</h2><span>Classes</span></div>
+<div class="kpi-card"><span class="kpi-label">Students</span><h2 id="studentsCount">1200</h2><span class="kpi-footnote">Enrolled learners</span></div>
+<div class="kpi-card"><span class="kpi-label">Teachers</span><h2 id="teachersCount">75</h2><span class="kpi-footnote">Active faculty</span></div>
+<div class="kpi-card"><span class="kpi-label">Attendance</span><h2 id="attendanceCount">94%</h2><span class="kpi-footnote">Weekly average</span></div>
+<div class="kpi-card"><span class="kpi-label">Classes</span><h2 id="classesCount">42</h2><span class="kpi-footnote">Running sections</span></div>
 </section>
 
 <section class="analytics-grid">
 
-<div class="panel">
+<div class="panel chart-panel">
 <div class="panel-header">Attendance Trend</div>
+<div class="chart-canvas-wrap">
 <canvas id="attendanceChart"></canvas>
 </div>
+</div>
 
-<div class="panel">
+<div class="panel chart-panel">
 <div class="panel-header">Fee Collection</div>
+<div class="chart-canvas-wrap">
 <canvas id="feeChart"></canvas>
 </div>
-
-<div class="panel">
-<div class="panel-header">Students by Class</div>
-<canvas id="studentsChart"></canvas>
 </div>
 
-<div class="panel">
+<div class="panel chart-panel">
+<div class="panel-header">Students by Class</div>
+<div class="chart-canvas-wrap">
+<canvas id="studentsChart"></canvas>
+</div>
+</div>
+
+<div class="panel chart-panel">
 <div class="panel-header">Teacher Departments</div>
+<div class="chart-canvas-wrap">
 <canvas id="teacherChart"></canvas>
+</div>
 </div>
 
 </section>
 
-<section class="panel">
+<section class="panel table-panel">
 <div class="panel-header">Recent Students</div>
 <table>
 <thead><tr><th>ID</th><th>Name</th><th>Class</th><th>Attendance</th><th>Fees</th></tr></thead>
@@ -76,12 +148,33 @@
 </table>
 </section>
 
-<section class="panel">
+<section class="panel table-panel">
 <div class="panel-header">Faculty Overview</div>
 <table>
 <thead><tr><th>ID</th><th>Name</th><th>Department</th><th>Status</th><th>Rating</th></tr></thead>
 <tbody id="teachersTable"></tbody>
 </table>
+</section>
+</section>
+
+<section id="view-students" class="app-view" data-view="students" hidden>
+<div id="studentsView"></div>
+</section>
+
+<section id="view-teachers" class="app-view" data-view="teachers" hidden>
+<div id="teachersView"></div>
+</section>
+
+<section id="view-attendance" class="app-view" data-view="attendance" hidden>
+<div id="attendanceView"></div>
+</section>
+
+<section id="view-timetable" class="app-view" data-view="timetable" hidden>
+<div id="timetableView"></div>
+</section>
+
+<section id="view-fees" class="app-view" data-view="fees" hidden>
+<div id="feesView"></div>
 </section>
 
 </main>
